@@ -15,8 +15,8 @@ token = os.getenv('TOKEN')
 async def on_ready():
     print("Logged in as a bot {0.user}".format(client))
 
-@commands.command(name='aquila')
-async def ping(ctx):
+@client.command(name='aquila')
+async def aquila(ctx):
     await ctx.send("Who gave permission for this? I sure as hell didn't.")
 
 client.run(token)
